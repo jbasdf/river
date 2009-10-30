@@ -28,6 +28,8 @@ Gem::Specification.new do |s|
      "lib/river/amazon_request.rb",
      "lib/river/tasks.rb",
      "public/ecs_to_rss-wishlist.xslt",
+     "rails/init.rb",
+     "river.gemspec",
      "tasks/river_tasks.rake",
      "test/river_test.rb",
      "test/test_helper.rb"
