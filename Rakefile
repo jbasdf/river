@@ -5,8 +5,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "river"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = "Talk to Amazon"
+    gem.description = "Code to interact with the AWS API"
     gem.email = "justinball@gmail.com"
     gem.homepage = "http://github.com/jbasdf/river"
     gem.authors = ["Justin Ball"]
