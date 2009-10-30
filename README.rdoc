@@ -1,6 +1,28 @@
 = river
 
-A gem to talk to Amazon Web Services to get wishlist feeds.  There's an example on http://www.my-amazon-feeds.com.
+A gem to talk to Amazon Web Services to get wishlist feeds.  See it live: http://www.my-amazon-feeds.com.
+
+== Usage
+  am = AmazonRequest.new(amazon_access_key_id, amazon_secret_access_key, ecs_to_rss_wishlist, amazon_associate_tag)
+  results = am.get_amazon_feeds(username) # username needs to be the user's Amazon email
+  feeds = results.collect { |result| OpenStruct.new(:url => result, :title => 'Amazon Wishlist', :name => 'wishlist') }
+
+  amazon_access_key_id:     Key from your AWS console
+  amazon_secret_access_key: Secret from your AWS console. 
+  amazon_associate_tag:     Optional parameter that can contain your associate tag.
+  ecs_to_rss_wishlist:      Url where the xslt transform lives.  This has to be a public url.  I've included a version in the gem.
+
+== Rails
+Add this to your Rakefile
+  require 'river/tasks'
+  
+Then you can sync in the ecs_to_rss_wishlist.xslt file:
+  rake river:sync
+
+== Other
+Here's some more information:
+http://www.justinball.com/2009/10/30/river-amazon-wishlist-gem/
+
 
 == Copyright
 
