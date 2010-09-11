@@ -26,6 +26,8 @@ Gem::Specification.new do |s|
      "lib/river.rb",
      "lib/river/amazon.rb",
      "lib/river/amazon_request.rb",
+     "lib/river/railtie.rb",
+     "lib/tasks/river.rake",
      "public/ecs_to_rss-wishlist.xslt",
      "river.gemspec",
      "test/river_test.rb",
