@@ -7,11 +7,12 @@ begin
     gem.name = "river"
     gem.summary = "Talk to Amazon"
     gem.description = "Code to interact with the AWS API"
-    gem.email = "justinball@gmail.com"
+    gem.email = "justin@tatemae.com"
     gem.homepage = "http://github.com/jbasdf/river"
-    gem.authors = ["Justin Ball"]
-    gem.add_development_dependency "thoughtbot-shoulda"
-    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+    gem.authors = ["Justin Ball", "Joel Duffin"]
+    gem.add_dependency "rails"
+    gem.add_dependency "httparty"
+    gem.add_development_dependency "shoulda"
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError

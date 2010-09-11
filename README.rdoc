@@ -13,10 +13,8 @@ A gem to talk to Amazon Web Services to get wishlist feeds.  See it live: http:/
   ecs_to_rss_wishlist:      Url where the xslt transform lives.  This has to be a public url.  I've included a version in the gem.
 
 == Rails
-Add this to your Rakefile
-  require 'river/tasks'
   
-Then you can sync in the ecs_to_rss_wishlist.xslt file:
+Sync in the ecs_to_rss_wishlist.xslt file:
   rake river:sync
 
 == Other
@@ -26,4 +24,4 @@ http://www.justinball.com/2009/10/30/river-amazon-wishlist-gem/
 
 == Copyright
 
-Copyright (c) 2009 Justin Ball. See LICENSE for details.
+Copyright (c) 2009-2010 Tatemae. See LICENSE for details.
